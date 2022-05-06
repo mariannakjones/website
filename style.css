@@ -169,9 +169,8 @@ body
         display: flex;
         justify-content: space-around;
     }
-    .form
+    .formContainer
     {
-        color: var(--highlight-color);
         flex: 1;
         margin-right: 5%;
     }
@@ -226,7 +225,7 @@ body
 {
     text-align: center;
 }
-.form input, .form textarea
+.formContainer input, .formContainer textarea
 {
     width: 100%;
     margin-bottom: 2%;
@@ -239,7 +238,7 @@ body
     padding: 1%;
     font-family: 'Body';
 }
-.form textarea
+.formContainer textarea
 {
     height: 10em;
 }
@@ -252,6 +251,7 @@ input[type="submit"]
     background-color: var(--highlight-color);
     color: var(--text-color);
     font-family: 'Title';
+    margin-bottom: 5%;
 }
 input[type=submit]:hover, input[type=submit]:focus
 {
@@ -263,4 +263,22 @@ input[type=submit]:hover, input[type=submit]:focus
 .text h3
 {
     font-size: 1.15em;
+}
+#successMessage
+{
+    color: var(--highlight-color);
+    text-align: center;
+    border: var(--border-color) 2px solid;
+    padding: 10% 0;
+    display: none;
+}
+#successMessage h1
+{
+    line-height: 0;
+}
+#errorMessage
+{
+    text-align: center;
+    color: var(--highlight-color);
+    display: none;
 }
