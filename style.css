@@ -238,8 +238,7 @@ body
         width: 100%;
         table-layout: fixed;
         position: relative;
-        margin-top: 3em;
-        margin-bottom: 3em;
+        margin: 5% 0;
         font-size: 0.75em;
     }
     .phase
@@ -376,7 +375,7 @@ input[type=submit]:hover, input[type=submit]:focus
 }
 .project
 {
-    padding: 0 5%;
+    padding: 1% 4%;
     border: var(--border-color) 2px solid;
     border-radius: 15px;
     text-align: center;
